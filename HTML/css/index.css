@@ -1,0 +1,172 @@
+/* root variable */
+:root {
+    /* color */
+    --primary-color: #010101;
+    /* linear color one */
+    --lco-f: #F0B71F;
+    --loc-s: #E03609;
+    /* linear color two */
+    --lct-f: #010101;
+    --lot-s: #C4C4C4;
+}
+
+/* universal style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html default style remove */
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* main container */
+.cba-container {
+    width: 100%;
+    background-color: var(--primary-color);
+    height: 100dvh;
+}
+
+/* section one style */
+.cba-container > .section-one {
+    width: inherit;
+    background-color: transparent;
+    height: 10%;
+    display: flex;
+}
+
+/* section-one box style */
+/* box one */
+.cba-container > .section-one > .sbox-one:nth-child(1) {
+    width: 7.5%;
+    height: initial;
+    background-color: transparent;
+    border: 1px solid var(--loc-s);
+    border-top: none;
+    border-left: none;
+}
+
+/* box two */
+.cba-container > .section-one > .sbox-one:nth-child(2) {
+    width: 85%;
+    height: initial;
+    background-color: transparent;
+    border: 1px solid;
+    border-image: linear-gradient(45deg, var(--loc-s)50%, var(--lco-f))50% 1;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    position: relative;
+}
+
+/* nav bar style */
+.cba-container > .section-one > .sbox-one:nth-child(2) > nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--loc-s);
+}
+
+/* circle one */
+.cba-container > .section-one > .sbox-one:nth-child(2) > .c-one {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--loc-s);
+    clip-path: circle(50% at 0% 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* circle two */
+.cba-container > .section-one > .sbox-one:nth-child(2) > .c-two {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--lco-f);
+    clip-path: circle(50% at 100% 100%);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* box three */
+.cba-container > .section-one > .sbox-one:nth-child(3) {
+    width: 7.5%;
+    height: initial;
+    background-color: transparent;
+    border: 1px solid var(--lco-f);
+    border-top: none;
+    border-right: none;
+}
+
+/* section two style */
+.cba-container > .section-two {
+    width: inherit;
+    background-color: transparent;
+    height: calc(100% - 10%);
+    display: flex;
+    /* background-color: #E03609; */
+}
+
+/* section-two box style */
+/* box one */
+.cba-container > .section-two > .sbox-two:nth-child(1) {
+    width: 7.5%;
+    height: initial;
+    background-color: transparent;
+    border: 1px solid var(--loc-s);
+    border-top: none;
+    border-left: none;
+    position: relative;
+}
+
+/* circle one */
+.cba-container > .section-two > .sbox-two:nth-child(1) > .c-one {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--loc-s);
+    clip-path: circle(50% at 100% 0%);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* box two */
+.cba-container > .section-two > .sbox-two:nth-child(2) {
+    width: 85%;
+    height: initial;
+    background-color: transparent;
+    border: 1px solid;
+    border-image: linear-gradient(45deg, var(--loc-s)50%, var(--lco-f))50% 1;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+/* box three */
+.cba-container > .section-two > .sbox-two:nth-child(3) {
+    width: 7.5%;
+    height: initial;
+    background-color: transparent;
+    border: 1px solid var(--lco-f);
+    border-right: none;
+    border-top: none;
+    position: relative;
+}
+
+/* circle two */
+.cba-container > .section-two > .sbox-two:nth-child(3) > .c-two {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--lco-f);
+    clip-path: circle(50% at 0% 0%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
