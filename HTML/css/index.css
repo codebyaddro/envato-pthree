@@ -2,12 +2,17 @@
 :root {
     /* color */
     --primary-color: #010101;
+    --white: #ffffff;
+    --black: #000000;
     /* linear color one */
     --lco-f: #F0B71F;
     --loc-s: #E03609;
     /* linear color two */
     --lct-f: #010101;
     --lot-s: #C4C4C4;
+    /* fonts */
+    --primary-font: "Montserrat", sans-serif;
+    --secondary-font: "Orbitron", sans-serif;
 }
 
 /* universal style */
@@ -24,6 +29,7 @@ html {
 
 a {
     text-decoration: none;
+    color: var(--black);
 }
 
 /* main container */
@@ -70,7 +76,81 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--loc-s);
+    padding: 0rem 6rem;
+    padding-top: 30px;
+}
+
+/* brand name */
+.cba-container > .section-one > .sbox-one:nth-child(2) > nav > a > h3 {
+    font-family: var(--primary-font);
+    font-size: 1.75rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, var(--lco-f), var(--loc-s));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* nav menu */
+.cba-container > .section-one > .sbox-one:nth-child(2) > nav > ul {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    list-style-type: none;
+}
+
+.cba-container > .section-one > .sbox-one:nth-child(2) > nav > ul > li > a {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* hover */
+.cba-container > .section-one > .sbox-one:nth-child(2) > nav > ul > li > a:hover {
+    background: linear-gradient(45deg, var(--lco-f), var(--loc-s));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* note: if active menu style needs then uncomment 2 style below */
+/* active menu */
+/* .cba-container > .section-one > .sbox-one:nth-child(2) > nav > ul > li > a.active {
+    background: linear-gradient(45deg, var(--lco-f), var(--loc-s));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
+} */
+
+/* .cba-container > .section-one > .sbox-one:nth-child(2) > nav > ul > li > a.active::after {
+    width: 100%;
+} */
+
+/* after */
+.cba-container > .section-one > .sbox-one:nth-child(2) > nav > ul > li > a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    background: linear-gradient(45deg, var(--loc-s), var(--lco-f));
+    transition: width 0.3s ease-in-out;
+}
+
+/* hover */
+.cba-container > .section-one > .sbox-one:nth-child(2) > nav > ul > li > a:hover::after {
+    width: 100%;
+}
+
+/* nav btn */
+.cba-container > .section-one > .sbox-one:nth-child(2) > nav > button {
+    padding: 0.5rem 1.5rem;
+    background: linear-gradient(90deg, var(--lco-f), var(--loc-s));
+    border: none;
+    border-radius: 0.4rem;
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 /* circle one */
@@ -147,6 +227,34 @@ a {
     border-top: none;
     border-right: none;
     border-left: none;
+    /* section two content div */
+    display: flex;
+    flex-direction: column;
+}
+
+/* section two content div one */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+
+/* heading */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-one > h1 {
+    color: var(--white);
+    font-family: var(--secondary-font);
+    font-size: 12rem;
+    font-weight: bold;
+}
+
+/* section two content div two */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
 /* box three */
