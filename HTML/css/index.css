@@ -36,7 +36,6 @@ a {
 .cba-container {
     width: 100%;
     background-color: var(--primary-color);
-    height: 100vh;
 }
 
 /* section one style */
@@ -76,8 +75,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem 6rem;
-    padding-top: 30px;
+    padding: 1.5rem 6rem;
 }
 /* responsive */
 @media(max-width: 1536px) {
@@ -265,9 +263,231 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem 2.5rem;
+    width: 100%;
+}
+
+/* sub-one */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-two > .scdt-sub-one {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 20%;
+    margin-top: -25rem;
+    position: relative;
+}
+
+/* heading */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-two > .scdt-sub-one > h3 {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+/* paragraph */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-two > .scdt-sub-one > p {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+
+/* span one for horizontal line */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-two > .scdt-sub-one > span.scdt-sub-one-span-one {
+    display: block;
+    height: 0.15rem;
+    width: 12.5rem;
+    background-color: var(--loc-s);
+    position: absolute;
+    top: 2.3rem;
+    left: 14rem;
+}
+
+/* span two for vertical line */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-two > .scdt-sub-one > span.scdt-sub-one-span-two {
+    display: block;
+    height: 12.5rem;
+    width: 0.1rem;
+    background: linear-gradient(var(--loc-s) , var(--lco-f));
+    position: absolute;
+    top: 2.3rem;
+    left: 26.4rem;
+}
+
+/* blinking span circle one */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-two > .scdt-sub-one > span.scdt-sub-one-span-three {
+    display: block;
+    height: 2.5rem;
+    width: 2.5rem;
+    background: linear-gradient(rgba(240, 183, 31, 0.3) , rgba(240, 183, 31, 0.3));
+    border-radius: 50%;
+    animation: blink-one 1.25s infinite;
+    position: absolute;
+    top: 13.5rem;
+    left: 25.2rem;
+}
+
+/* @keyframes blink-one {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
+
+/* blinking span circle two */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-two > .scdt-sub-one > span.scdt-sub-one-span-three > span.scdt-sub-one-span-three-inner {
+    display: block;
+    height: 1.5rem;
+    width: 1.5rem;
+    background: linear-gradient(rgba(240, 183, 31, 0.47) , rgba(240, 183, 31, 0.47));
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: blink-two 1.25s infinite;
+}
+
+/* @keyframes blink-two {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
+
+/* blinking span circle three */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-two > .scdt-sub-one > span.scdt-sub-one-span-three > span.scdt-sub-one-span-three-inner > span.scdt-sub-one-span-three-inner-inner {
+    display: block;
+    height: 0.75rem;
+    width: 0.75rem;
+    background: linear-gradient(rgba(240, 183, 31, 1) , rgba(240, 183, 31, 1));
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: blink-three 1.25s infinite;
+}
+
+/* @keyframes blink-three {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
+
+/* ------------------------------- */
+
+/* sub two */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-two > .scdt-sub-two {
+    height: 50rem;
+    width: 80%;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 }
+
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-two > .scdt-sub-two > div {
+    height: 50rem;
+    width: initial;
+    background: linear-gradient(var(--lot-s) , var(--lct-f));
+    margin-top: -11rem;
+}
+
+/* sub three */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-two > .scdt-sub-three {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    width: 20%;
+    margin-top: -25rem;
+}
+
+/* heading */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-two > .scdt-sub-three > h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* normal */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-two > .scdt-sub-three > h3 > span:nth-child(1) {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+/* bold */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-two > .scdt-sub-three > h3 > span:nth-child(2) {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+/* paragraph */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-two > .scdt-sub-three > p {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 0.875rem;
+    font-weight: 300;  
+    text-align: end;
+    word-spacing: 0.25rem;
+    letter-spacing: 0.2rem;
+    white-space: nowrap;
+}
+
+/* button */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-two > .scdt-sub-three > button {
+    padding: 0.5rem 1.5rem;
+    background: linear-gradient(90deg, var(--lco-f), var(--loc-s));
+    border: none;
+    border-radius: 0.4rem;
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* ---------------------------------------------------------- */
 
 /* box three */
 .cba-container > .section-two > .sbox-two:nth-child(3) {
