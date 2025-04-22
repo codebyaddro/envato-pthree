@@ -36,7 +36,7 @@ a {
 .cba-container {
     width: 100%;
     background-color: var(--primary-color);
-    height: 100dvh;
+    height: 100vh;
 }
 
 /* section one style */
@@ -78,6 +78,12 @@ a {
     align-items: center;
     padding: 0rem 6rem;
     padding-top: 30px;
+}
+/* responsive */
+@media(max-width: 1536px) {
+    .cba-container > .section-one > .sbox-one:nth-child(2) > nav {
+        padding-top: 20px;
+    }
 }
 
 /* brand name */
@@ -246,6 +252,12 @@ a {
     font-family: var(--secondary-font);
     font-size: 12rem;
     font-weight: bold;
+}
+
+@media(max-width: 1536px) {
+    .cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-one > h1 {
+        font-size: 9rem;
+    }
 }
 
 /* section two content div two */
