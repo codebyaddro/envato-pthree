@@ -227,7 +227,7 @@ a {
     height: initial;
     background-color: transparent;
     border: 1px solid;
-    border-image: linear-gradient(45deg, var(--loc-s)50%, var(--lco-f))50% 1;
+    border-image: linear-gradient(90deg, var(--loc-s)50%, var(--lco-f))50% 1;
     border-top: none;
     border-right: none;
     border-left: none;
@@ -242,6 +242,7 @@ a {
     justify-content: center;
     align-items: center;
     padding-top: 2.5rem;
+    z-index: 1;
 }
 
 /* heading */
@@ -275,6 +276,7 @@ a {
     width: 20%;
     margin-top: -25rem;
     position: relative;
+    z-index: 3;
 }
 
 /* heading */
@@ -418,6 +420,7 @@ a {
     width: 80%;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+    z-index: 2;
 }
 
 .cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-two > .scdt-sub-two > div {
@@ -437,6 +440,7 @@ a {
     padding-bottom: 2.5rem;
     width: 20%;
     margin-top: -25rem;
+    z-index: 3;
 }
 
 /* heading */
@@ -460,6 +464,7 @@ a {
     font-family: var(--primary-font);
     font-size: 2.5rem;
     font-weight: 500;
+    margin-bottom: -0.25rem;
 }
 
 /* paragraph */
@@ -469,9 +474,6 @@ a {
     font-size: 0.875rem;
     font-weight: 300;  
     text-align: end;
-    word-spacing: 0.25rem;
-    letter-spacing: 0.2rem;
-    white-space: nowrap;
 }
 
 /* button */
