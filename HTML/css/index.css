@@ -38,6 +38,8 @@ a {
     background-color: var(--primary-color);
 }
 
+/* --------------------------------------------------- */
+
 /* section one style */
 .cba-container > .section-one {
     width: inherit;
@@ -189,6 +191,8 @@ a {
     border-right: none;
 }
 
+/* ----------------------------------- */
+
 /* section two style */
 .cba-container > .section-two {
     width: inherit;
@@ -234,6 +238,31 @@ a {
     /* section two content div */
     display: flex;
     flex-direction: column;
+    /* inner circle */
+    position: relative;
+}
+
+/* inner circle */
+/* circle one */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .c-one {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--loc-s);
+    clip-path: circle(50% at 0% 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* circle two */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .c-two {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--lco-f);
+    clip-path: circle(50% at 100% 100%);
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 /* section two content div one */
@@ -324,13 +353,13 @@ a {
     width: 2.5rem;
     background: linear-gradient(rgba(240, 183, 31, 0.3) , rgba(240, 183, 31, 0.3));
     border-radius: 50%;
-    animation: blink-one 1.25s infinite;
+    animation: blink-one 1.25s infinite .75s;
     position: absolute;
     top: 13.5rem;
     left: 25.2rem;
 }
 
-/* @keyframes blink-one {
+@keyframes blink-one {
     0% {
         opacity: 0;
     }
@@ -346,7 +375,7 @@ a {
     100% {
         opacity: 1;
     }
-} */
+}
 
 /* blinking span circle two */
 .cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-two > .scdt-sub-one > span.scdt-sub-one-span-three > span.scdt-sub-one-span-three-inner {
@@ -362,7 +391,7 @@ a {
     animation: blink-two 1.25s infinite;
 }
 
-/* @keyframes blink-two {
+@keyframes blink-two {
     0% {
         opacity: 0;
     }
@@ -378,7 +407,7 @@ a {
     100% {
         opacity: 1;
     }
-} */
+}
 
 /* blinking span circle three */
 .cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-two > .scdt-sub-one > span.scdt-sub-one-span-three > span.scdt-sub-one-span-three-inner > span.scdt-sub-one-span-three-inner-inner {
@@ -394,7 +423,7 @@ a {
     animation: blink-three 1.25s infinite;
 }
 
-/* @keyframes blink-three {
+@keyframes blink-three {
     0% {
         opacity: 0;
     }
@@ -410,7 +439,7 @@ a {
     100% {
         opacity: 1;
     }
-} */
+}
 
 /* ------------------------------- */
 
@@ -428,6 +457,12 @@ a {
     width: initial;
     background: linear-gradient(var(--lot-s) , var(--lct-f));
     margin-top: -11rem;
+}
+
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-two > .scdt-sub-two > div > img {
+    height: 50rem;
+    width: 65rem;
+    object-fit: cover;
 }
 
 /* sub three */
@@ -512,3 +547,184 @@ a {
     top: 0;
     left: 0;
 }
+
+/* ---------------------------------------------------------- */
+
+/* section two content div three */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-three {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2.5rem 5.5rem;
+    width: 100%;
+    z-index: 3;
+}
+
+/* sub-one */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-three > .scdth-sub-one {
+    width: 50%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+/* box */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-three > .scdth-sub-one > .scdth-sub-one-box {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-image: linear-gradient(45deg, var(--loc-s), var(--lco-f)) 1;
+    border-radius: 1rem;
+    padding: 1.75rem;
+    margin-top: -20rem;
+}
+
+/* image box */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-three > .scdth-sub-one > .scdth-sub-one-box > .scdth-sub-one-img-box {
+    width: 12.5rem;
+    height: 16.25rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+/* image */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-three > .scdth-sub-one > .scdth-sub-one-box > .scdth-sub-one-img-box > img {
+    width: 12.5rem;
+    height: 16.25rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
+}
+
+/* text box */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-three > .scdth-sub-one > .scdth-sub-one-box > .scdth-sub-one-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;    
+    gap: 0.25rem;
+}
+
+/* h3 */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-three > .scdth-sub-one > .scdth-sub-one-box > .scdth-sub-one-text-box > h3 {
+    font-family: var(--primary-font);
+    font-size: 2.75rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, var(--lco-f), var(--loc-s));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 0.5rem;
+}
+
+/* h4 */    
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-three > .scdth-sub-one > .scdth-sub-one-box > .scdth-sub-one-text-box > h4 {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+}
+
+/* p */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-three > .scdth-sub-one > .scdth-sub-one-box > .scdth-sub-one-text-box > p {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 0.75rem;
+    font-weight: 300;
+}
+
+/* sub-two */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-three > .scdth-sub-two {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.25rem;
+    margin-top: -20rem;
+    padding: 1.5rem;
+}
+
+/* h3 */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-three > .scdth-sub-two > h3:nth-child(1) {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 2.3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-three > .scdth-sub-two > h3:nth-child(2) {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 2.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: -0.25rem;
+    padding-bottom: 1rem;
+}
+
+/* p */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-three > .scdth-sub-two > p {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 0.875rem;
+    font-weight: 300;
+    letter-spacing: 2.5px;
+    word-spacing: 2px;
+}
+
+/* sub-three */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-three > .scdth-sub-three {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.25rem;
+    margin-top: -20rem;
+    padding: 1.5rem;
+}
+
+/* div */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-three > .scdth-sub-three > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.25rem;
+    background: #1a1a1a;
+    border: 1px solid;
+    border-image: linear-gradient(45deg, var(--loc-s), var(--lco-f))1;
+    padding: 1.5rem;
+}
+
+/* h3 */
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-three > .scdth-sub-three > div > h3 {
+    background: linear-gradient(45deg, var(--lco-f), var(--loc-s));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--primary-font);
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* p */    
+.cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-three > .scdth-sub-three > div > p {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    word-spacing: 2px;
+}
+
+/* ------------------------------------------ */
