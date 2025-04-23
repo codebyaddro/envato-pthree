@@ -197,9 +197,7 @@ a {
 .cba-container > .section-two {
     width: inherit;
     background-color: transparent;
-    height: calc(100% - 10%);
     display: flex;
-    /* background-color: #E03609; */
 }
 
 /* section-two box style */
@@ -727,4 +725,295 @@ a {
     word-spacing: 2px;
 }
 
-/* ------------------------------------------ */
+/* ------------------------------------------------ */
+
+/* section three */
+.cba-container > .section-three {
+    width: inherit;
+    display: flex;
+}
+
+/* section three box style */
+/* box one */
+.cba-container > .section-three > .sbox-three:nth-child(1) {
+    width: 7.5%;
+    height: initial;
+    background-color: transparent;
+    border: 1px solid var(--loc-s);
+    border-top: none;
+    border-left: none;
+    position: relative;
+}
+
+/* circle one */
+.cba-container > .section-three > .sbox-three:nth-child(1) > span.c-one {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--loc-s);
+    clip-path: circle(50% at 100% 0%);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* ------------------------- */
+
+/* box two */
+.cba-container > .section-three > .sbox-three:nth-child(2) {
+    width: 85%;
+    height: initial;
+    background-color: transparent;
+    border: 1px solid;
+    border-image: linear-gradient(90deg, var(--loc-s)50%, var(--lco-f))50% 1;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    position: relative;
+    /* section three content div */
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    /* inner circle */
+    position: relative;
+}
+
+/* inner circle */
+/* circle one */
+.cba-container > .section-three > .sbox-three:nth-child(2) > span.c-one {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--loc-s);
+    clip-path: circle(50% at 0% 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* circle two */
+.cba-container > .section-three > .sbox-three:nth-child(2) > span.c-two {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--lco-f);
+    clip-path: circle(50% at 100% 100%);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+ /* ---------- */
+/* top box */
+.cba-container > .section-three > .sbox-three:nth-child(2) > .sbth-top-box {
+    width: 100%;
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* top left box */
+.cba-container > .section-three > .sbox-three:nth-child(2) > .sbth-top-box > .sbth-top-left-box {
+    width: 50%;
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+}
+
+/* heading */
+.cba-container > .section-three > .sbox-three:nth-child(2) > .sbth-top-box > .sbth-top-left-box > h3 {
+    color: var(--white);
+    font-family: var(--secondary-font);
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.cba-container > .section-three > .sbox-three:nth-child(2) > .sbth-top-box > .sbth-top-left-box > h3 > span {
+    background: linear-gradient(90deg, var(--lco-f), var(--loc-s));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* paragraph */
+.cba-container > .section-three > .sbox-three:nth-child(2) > .sbth-top-box > .sbth-top-left-box > p {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+    word-spacing: 2px;
+}
+
+/* counters box */
+.cba-container > .section-three > .sbox-three:nth-child(2) > .sbth-top-box > .sbth-top-left-box > .stlb-counter-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* counters */
+.cba-container > .section-three > .sbox-three:nth-child(2) > .sbth-top-box > .sbth-top-left-box > .stlb-counter-box > .scb-counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cba-container > .section-three > .sbox-three:nth-child(2) > .sbth-top-box > .sbth-top-left-box > .stlb-counter-box > .scb-counter > h3 {
+    background: linear-gradient(90deg, var(--lco-f), var(--loc-s));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--primary-font);
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.cba-container > .section-three > .sbox-three:nth-child(2) > .sbth-top-box > .sbth-top-left-box > .stlb-counter-box > .scb-counter > p {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+
+/* top right box */
+.cba-container > .section-three > .sbox-three:nth-child(2) > .sbth-top-box > .sbth-top-right-box {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cba-container > .section-three > .sbox-three:nth-child(2) > .sbth-top-box > .sbth-top-right-box > div {
+    width: 100%;
+    height: 42rem;
+    background: linear-gradient(180deg , var(--lot-s) , var(--lct-f));
+}
+
+/* ------- */
+
+/* bottom box */
+.cba-container > .section-three > .sbox-three:nth-child(2) > .sbth-bottom-box {
+    width: 100%;
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* botton left box */
+.cba-container > .section-three > .sbox-three:nth-child(2) > .sbth-bottom-box > .sbth-bottom-left-box {
+    width: 50%;
+    height: 42rem;
+    background: linear-gradient(180deg , var(--lot-s) , var(--lct-f));
+}
+
+/* bottom right box */
+.cba-container > .section-three > .sbox-three:nth-child(2) > .sbth-bottom-box > .sbth-bottom-right-box {
+    width: 50%;
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+}
+
+/* heading */
+.cba-container > .section-three > .sbox-three:nth-child(2) > .sbth-bottom-box > .sbth-bottom-right-box > h3 {
+    color: var(--white);
+    font-family: var(--secondary-font);
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.cba-container > .section-three > .sbox-three:nth-child(2) > .sbth-bottom-box > .sbth-bottom-right-box > h3 > span {
+    background: linear-gradient(90deg, var(--lco-f), var(--loc-s));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* paragraph */
+.cba-container > .section-three > .sbox-three:nth-child(2) > .sbth-bottom-box > .sbth-bottom-right-box > p {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+    word-spacing: 2px;
+}
+
+/* info box */
+.cba-container > .section-three > .sbox-three:nth-child(2) > .sbth-bottom-box > .sbth-bottom-right-box > .sbrb-info-box {
+    width: 100%;
+    display: flex;
+    gap: 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--lot-s);
+    border-image: linear-gradient(45deg, var(--loc-s)50%, var(--lco-f))50% 1;
+    padding: 1.5rem;
+}
+
+/* info box image */
+.cba-container > .section-three > .sbox-three:nth-child(2) > .sbth-bottom-box > .sbth-bottom-right-box > .sbrb-info-box > .sbrb-info-box-img {
+    width: 10rem;
+    height: 10rem;
+    background: var(--lot-s);
+    border-radius: 1rem;
+}
+
+/* info box content/text */
+.cba-container > .section-three > .sbox-three:nth-child(2) > .sbth-bottom-box > .sbth-bottom-right-box > .sbrb-info-box > .sbrb-info-box-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* info box heading */
+.cba-container > .section-three > .sbox-three:nth-child(2) > .sbth-bottom-box > .sbth-bottom-right-box > .sbrb-info-box > .sbrb-info-box-text > h4 {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 1.75rem;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    word-spacing: 2px;
+}
+
+/* info box paragraph */
+.cba-container > .section-three > .sbox-three:nth-child(2) > .sbth-bottom-box > .sbth-bottom-right-box > .sbrb-info-box > .sbrb-info-box-text > p {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+
+/* ------------------------- */
+
+/* box three */
+.cba-container > .section-three > .sbox-three:nth-child(3) {
+    width: 7.5%;
+    height: initial;
+    background-color: transparent;
+    border: 1px solid var(--lco-f);
+    border-top: none;
+    border-right: none;
+    position: relative;
+}
+
+/* circle two */
+.cba-container > .section-three > .sbox-three:nth-child(3) > span.c-two {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--lco-f);
+    clip-path: circle(50% at 0% 0%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
