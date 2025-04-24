@@ -1017,3 +1017,174 @@ a {
     top: 0;
     left: 0;
 }
+
+/* ----------------------------------------- */
+
+/* section four */
+.cba-container > .section-four {
+    width: inherit;
+    background-color: transparent;
+    display: flex;
+}
+
+/* section-four box style */
+/* box one */
+.cba-container > .section-four > .sbox-four:nth-child(1) {
+    width: 7.5%;
+    height: initial;
+    background-color: transparent;
+    border: 1px solid var(--loc-s);
+    border-top: none;
+    border-left: none;
+    position: relative;
+}
+
+/* circle one */
+.cba-container > .section-four > .sbox-four:nth-child(1) > .c-one {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--loc-s);
+    clip-path: circle(50% at 100% 0%);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* circle two */
+.cba-container > .section-four > .sbox-four:nth-child(1) > .c-two {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--loc-s);
+    clip-path: circle(50% at 100% 100%);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* ------------------- */
+
+/* box two */
+.cba-container > .section-four > .sbox-four:nth-child(2) {
+    width: 85%;
+    height: initial;
+    background-color: transparent;
+    border: 1px solid;
+    border-image: linear-gradient(90deg, var(--loc-s)50%, var(--lco-f))50% 1;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    position: relative;
+    background-color: #414141;
+    padding: 5rem;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+/* content div one */
+.cba-container > .section-four > .sbox-four:nth-child(2) > .sbf-content-box-one {
+    width: 55%;
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+}
+
+/* heading */
+.cba-container > .section-four > .sbox-four:nth-child(2) > .sbf-content-box-one > h3 {
+    color: var(--white);
+    font-family: var(--secondary-font);
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+/* paragraph */
+.cba-container > .section-four > .sbox-four:nth-child(2) > .sbf-content-box-one > p {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+/* content div two */
+.cba-container > .section-four > .sbox-four:nth-child(2) > .sbf-content-box-two {
+    width: 45%;
+    padding: 5rem;
+    border: 1px solid;
+    border-image: linear-gradient(45deg, var(--loc-s), var(--lco-f)) 1;
+    border-top: none;
+    border-bottom: none;
+}
+
+.cba-container > .section-four > .sbox-four:nth-child(2) > .sbf-content-box-two > ul {
+    display: flex;
+    gap: 1.75rem;
+    flex-direction: column;
+    list-style-type: square;
+}
+
+.cba-container > .section-four > .sbox-four:nth-child(2) > .sbf-content-box-two > ul > li {
+    font-size: 1.25rem;
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+
+.cba-container > .section-four > .sbox-four:nth-child(2) > .sbf-content-box-two > ul > li:nth-child(odd)::marker {
+    color: var(--lco-f);
+}
+
+.cba-container > .section-four > .sbox-four:nth-child(2) > .sbf-content-box-two > ul > li:nth-child(even)::marker {
+    color: var(--loc-s);
+}
+
+.cba-container > .section-four > .sbox-four:nth-child(2) > .sbf-content-box-two > ul > li > i.bx {
+    padding-left: 5px;
+}
+
+.cba-container > .section-four > .sbox-four:nth-child(2) > .sbf-content-box-two > ul > li:hover > i.bx {
+    padding-left: 1.5rem;
+    transition: all .5s;
+}
+
+
+/* ------------------- */
+
+/* box three */
+.cba-container > .section-four > .sbox-four:nth-child(3) {
+    width: 7.5%;
+    height: initial;
+    background-color: transparent;
+    border: 1px solid var(--lco-f);
+    border-top: none;
+    border-right: none;
+    position: relative;
+}
+
+/* circle three */
+.cba-container > .section-four > .sbox-four:nth-child(3) > .c-three {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--lco-f);
+    clip-path: circle(50% at 0% 0%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* circle four */
+.cba-container > .section-four > .sbox-four:nth-child(3) > .c-four {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--lco-f);
+    clip-path: circle(50% at 0% 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* --------------------------------------------------------------------- */
+
+/* section five */
