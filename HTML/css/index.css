@@ -191,7 +191,7 @@ a {
     border-right: none;
 }
 
-/* ----------------------------------- */
+/* ---------------------------------------------------- */
 
 /* section two style */
 .cba-container > .section-two {
@@ -452,14 +452,14 @@ a {
 
 .cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-two > .scdt-sub-two > div {
     height: 50rem;
-    width: initial;
+    width: 100%;
     background: linear-gradient(var(--lot-s) , var(--lct-f));
     margin-top: -11rem;
 }
 
 .cba-container > .section-two > .sbox-two:nth-child(2) > .stbt-content-div-two > .scdt-sub-two > div > img {
-    height: 50rem;
-    width: 65rem;
+    height: inherit;
+    width: inherit;
     object-fit: cover;
 }
 
@@ -1371,3 +1371,64 @@ a {
 /* -------------------------------------------------------------------- */
 
 /* section six */
+.cba-container > .section-six {
+    width: inherit;
+    background-color: transparent;
+    display: flex;
+    height: 50vh;
+}
+
+/* box one */
+.cba-container > .section-six > .sbox-six:nth-child(1) {
+    width: 7.5%;
+    height: initial;
+    background-color: transparent;
+    border: 1px solid var(--lco-f);
+    border-top: none;
+    border-left: none;
+    position: relative;
+}
+
+/* circle one */
+.cba-container > .section-six > .sbox-six:nth-child(1) > span.c-one {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--lco-f);
+    clip-path: circle(50% at 100% 0%);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* box two */
+.cba-container > .section-six > .sbox-six:nth-child(2) {
+    width: 85%;
+    height: initial;
+    background-color: transparent;
+    border: 1px solid;
+    border-image: linear-gradient(135deg, var(--lco-f), var(--loc-s)) 1;
+    border-top: none;
+    border-right: none;
+}
+
+/* box three */
+.cba-container > .section-six > .sbox-six:nth-child(3) {
+    width: 7.5%;
+    height: initial;
+    background-color: transparent;
+    border: 1px solid var(--loc-s);
+    border-top: none;
+    border-right: none;
+    position: relative;
+}
+
+/* circle two */
+.cba-container > .section-six > .sbox-six:nth-child(3) > span.c-two {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--loc-s);
+    clip-path: circle(50% at 0% 0%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
