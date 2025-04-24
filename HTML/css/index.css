@@ -1375,7 +1375,6 @@ a {
     width: inherit;
     background-color: transparent;
     display: flex;
-    height: 50vh;
 }
 
 /* box one */
@@ -1400,16 +1399,315 @@ a {
     right: 0;
 }
 
+/* ------------- */
+
 /* box two */
 .cba-container > .section-six > .sbox-six:nth-child(2) {
     width: 85%;
     height: initial;
     background-color: transparent;
     border: 1px solid;
-    border-image: linear-gradient(135deg, var(--lco-f), var(--loc-s)) 1;
+    border-image: linear-gradient(90deg, var(--lco-f), var(--loc-s)) 1;
     border-top: none;
     border-right: none;
+    display: flex;
+    flex-direction: column;
+    gap: 7.5rem;
+    padding: 6rem 5rem;
+    position: relative;
 }
+
+/* circle onw */
+.cba-container > .section-six > .sbox-six:nth-child(2) > span.c-one {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--lco-f);
+    clip-path: circle(50% at 0% 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* circle two */
+.cba-container > .section-six > .sbox-six:nth-child(2) > span.c-two {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--loc-s);
+    clip-path: circle(50% at 100% 100%);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* content box one */
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-one {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+/* img box */
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-one > .sbs-cbo-img-box {
+    width: 50%;
+}
+
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-one > .sbs-cbo-img-box > div {
+    width: initial;
+    height: 37.5rem;
+    background-color: var(--lot-s);
+    border-radius: 1rem;
+}
+
+/* text box  */
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-one > .sbs-cbo-text-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* heading */
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-one > .sbs-cbo-text-box > h3 {
+    color: var(--white);
+    font-family: var(--secondary-font);
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-one > .sbs-cbo-text-box > h3 > span {
+    background: linear-gradient(180deg, var(--lco-f), var(--loc-s));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* paragraph */
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-one > .sbs-cbo-text-box > p {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 1.1rem;
+    font-weight: 300;
+    word-spacing: 2px;
+    line-height: 1.5rem;
+}
+
+/* button box */
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-one > .sbs-cbo-text-box > .sbs-cbo-text-box-btn {
+    display: flex;
+    gap: 2rem;
+}
+
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-one > .sbs-cbo-text-box > .sbs-cbo-text-box-btn > button:nth-child(1) {
+    padding: 0.75rem 1.5rem 0.6rem;
+    border: none;
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient(90deg, var(--lco-f), var(--loc-s));
+}
+
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-one > .sbs-cbo-text-box > .sbs-cbo-text-box-btn > button:nth-child(2) {
+    padding: 0.75rem 1.5rem 0.6rem;
+    border: 1px solid;
+    border-image: linear-gradient(90deg, var(--lco-f), var(--loc-s)) 1;
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 500;
+    background: linear-gradient(90deg, var(--lco-f), var(--loc-s));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+/* content box two */
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-two {
+    display: flex;
+    gap: 7.5rem;
+    flex-direction: column;
+}
+
+/* text box */
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-two > .sbs-cbt-text-box {
+    padding: 0rem 17.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* heading */
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-two > .sbs-cbt-text-box > h3 {
+    color: var(--white);
+    font-family: var(--secondary-font);    
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 4rem;
+    text-align: center;
+}
+
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-two > .sbs-cbt-text-box > h3 > span {
+    background: linear-gradient(200deg, var(--lco-f), var(--loc-s));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* paragraph */
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-two > .sbs-cbt-text-box > p {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 1.1rem;
+    font-weight: 300;
+    word-spacing: 2px;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+/* faq box */
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-two > .sbs-cbt-faq-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5rem;
+}
+
+/* top part */
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-two > .sbs-cbt-faq-box > .sbs-cbt-faq-top-part {
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    display: flex;
+    gap: 7.5rem;
+}
+
+/* question box one */
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-two > .sbs-cbt-faq-box > .sbs-cbt-faq-top-part > .sbs-cbt-faq-top-part-question-box {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    display: flex;
+}
+
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-two > .sbs-cbt-faq-box > .sbs-cbt-faq-top-part > .sbs-cbt-faq-top-part-question-box:nth-child(1) {
+    gap: 3.3rem;
+}
+
+/* number box */
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-two > .sbs-cbt-faq-box > .sbs-cbt-faq-top-part > .sbs-cbt-faq-top-part-question-box > .scftpqb-number-box > h3 {
+    background: linear-gradient(200deg, var(--lco-f), var(--loc-s));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--secondary-font);
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+/* text box */
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-two > .sbs-cbt-faq-box > .sbs-cbt-faq-top-part > .sbs-cbt-faq-top-part-question-box > .scftpqb-text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    border: 1px solid;
+    border-image: linear-gradient(225deg, var(--lco-f), var(--loc-s)) 1;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding-bottom: 1rem;
+}
+
+/* heading */
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-two > .sbs-cbt-faq-box > .sbs-cbt-faq-top-part > .sbs-cbt-faq-top-part-question-box > .scftpqb-text-box > h3 {
+    color: var(--white);
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+    text-align: left;
+    align-items: flex-start;
+}
+
+/* paragraph */
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-two > .sbs-cbt-faq-box > .sbs-cbt-faq-top-part > .sbs-cbt-faq-top-part-question-box > .scftpqb-text-box > p {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 300;
+    word-spacing: 2px;
+    line-height: 1.25rem;
+    text-align: left;
+    align-items: flex-start;
+}
+
+/* --------- */
+
+/* bottom part */
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-two > .sbs-cbt-faq-box > .sbs-cbt-faq-bottom-part {
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    display: flex;
+    gap: 7.5rem;
+}
+
+/* question box two */
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-two > .sbs-cbt-faq-box > .sbs-cbt-faq-bottom-part > .sbs-cbt-faq-bottom-part-question-box {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    display: flex;
+}
+
+/* number box */
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-two > .sbs-cbt-faq-box > .sbs-cbt-faq-bottom-part > .sbs-cbt-faq-bottom-part-question-box > .scfbpqb-number-box > h3 {
+    background: linear-gradient(200deg, var(--lco-f), var(--loc-s));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--secondary-font);
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+/* text box */
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-two > .sbs-cbt-faq-box > .sbs-cbt-faq-bottom-part > .sbs-cbt-faq-bottom-part-question-box > .scfbpqb-text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    border: 1px solid;
+    border-image: linear-gradient(225deg, var(--lco-f), var(--loc-s)) 1;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding-bottom: 1rem;
+}
+
+/* heading */
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-two > .sbs-cbt-faq-box > .sbs-cbt-faq-bottom-part > .sbs-cbt-faq-bottom-part-question-box > .scfbpqb-text-box > h3 {
+    color: var(--white);
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+    text-align: left;
+    align-items: flex-start;
+}
+
+/* paragraph */
+.cba-container > .section-six > .sbox-six:nth-child(2) > .sbs-content-box-two > .sbs-cbt-faq-box > .sbs-cbt-faq-bottom-part > .sbs-cbt-faq-bottom-part-question-box > .scfbpqb-text-box > p {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 300;
+    word-spacing: 2px;
+    line-height: 1.25rem;
+    text-align: left;
+    align-items: flex-start;
+}
+
+/* ------------- */
 
 /* box three */
 .cba-container > .section-six > .sbox-six:nth-child(3) {
@@ -1432,3 +1730,7 @@ a {
     top: 0;
     left: 0;
 }
+
+/* --------------------------------------------------------------------------------------- */
+
+/* section seven */
