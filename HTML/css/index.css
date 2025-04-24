@@ -1018,7 +1018,7 @@ a {
     left: 0;
 }
 
-/* ----------------------------------------- */
+/* ------------------------------------------------------------- */
 
 /* section four */
 .cba-container > .section-four {
@@ -1079,7 +1079,7 @@ a {
     display: flex;
     gap: 5rem;
     align-items: center;
-}
+}   
 
 /* content div one */
 .cba-container > .section-four > .sbox-four:nth-child(2) > .sbf-content-box-one {
@@ -1188,3 +1188,186 @@ a {
 /* --------------------------------------------------------------------- */
 
 /* section five */
+.cba-container > .section-five {
+    width: inherit;
+    background-color: transparent;
+    display: flex;
+}
+
+/* section-five box style */
+/* box one */
+.cba-container > .section-five > .sbox-five:nth-child(1) {
+    width: 7.5%;
+    height: initial;
+    background-color: transparent;
+    border: 1px solid;
+    border-image: linear-gradient(var(--loc-s), var(--lco-f)) 1;
+    border-top: none;
+    border-left: none;
+}
+
+/* box two */
+.cba-container > .section-five > .sbox-five:nth-child(2) {
+    width: 85%;
+    height: initial;
+    background-color: transparent;
+    border: 1px solid;
+    border-image: linear-gradient(90deg, var(--lco-f), var(--loc-s)) 1;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    display: flex;
+    gap: 7.5rem;
+    flex-direction: column;
+    padding: 5rem 5rem;
+    position: relative;
+}
+
+/* ------------- */
+
+/* inner circles */
+/* circle one */
+.cba-container > .section-five > .sbox-five:nth-child(2) > span.c-one {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--loc-s);
+    clip-path: circle(50% at 0% 0%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* circle two */
+.cba-container > .section-five > .sbox-five:nth-child(2) > span.c-two {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--lco-f);
+    clip-path: circle(50% at 100% 0%);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* circle three */
+.cba-container > .section-five > .sbox-five:nth-child(2) > span.c-three {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--lco-f);
+    clip-path: circle(50% at 0% 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* circle one */
+.cba-container > .section-five > .sbox-five:nth-child(2) > span.c-four {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--loc-s);
+    clip-path: circle(50% at 100% 100%);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* ------------- */
+
+/* top content div */
+.cba-container > .section-five > .sbox-five:nth-child(2) > .sbfi-top-content-box {
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    padding: 0rem 15rem;
+}
+
+/* heading */
+.cba-container > .section-five > .sbox-five:nth-child(2) > .sbfi-top-content-box > h3 {
+    color: var(--white);
+    font-family: var(--secondary-font);
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cba-container > .section-five > .sbox-five:nth-child(2) > .sbfi-top-content-box > h3 > span {
+    background: linear-gradient(200deg, var(--lco-f), var(--loc-s));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* paragraph */
+.cba-container > .section-five > .sbox-five:nth-child(2) > .sbfi-top-content-box > p {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+    word-spacing: 2px;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+/* bottom content div */
+.cba-container > .section-five > .sbox-five:nth-child(2) > .sbfi-bottom-content-box {
+    display: flex;
+    gap: 5rem;
+    width: 100%;
+}
+
+/* inner box */
+.cba-container > .section-five > .sbox-five:nth-child(2) > .sbfi-bottom-content-box > .sbcb-inner-box {
+    width: 33%;
+    display: flex;
+    gap: 1.5em;
+    flex-direction: row;
+}
+
+/* img */
+.cba-container > .section-five > .sbox-five:nth-child(2) > .sbfi-bottom-content-box > .sbcb-inner-box > .sbcb-ib-icon > img {
+    width: 2.875rem;
+    height: 2.875rem;
+    border: 1px solid;
+    border-image: linear-gradient(200deg, var(--lco-f), var(--loc-s)) 1;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+/* text */
+.cba-container > .section-five > .sbox-five:nth-child(2) > .sbfi-bottom-content-box > .sbcb-inner-box > .sbcb-ib-text {
+    display: flex;
+    gap: 0.75rem;
+    flex-direction: column;
+}
+
+/* heading */
+.cba-container > .section-five > .sbox-five:nth-child(2) > .sbfi-bottom-content-box > .sbcb-inner-box > .sbcb-ib-text > h3 {
+    color: var(--white);
+    font-family: var(--secondary-font);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* paragraph */
+.cba-container > .section-five > .sbox-five:nth-child(2) > .sbfi-bottom-content-box > .sbcb-inner-box > .sbcb-ib-text > p {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 0.875rem;
+    font-weight: 300;
+    word-spacing: 2px;
+    line-height: 1.25rem;
+}
+
+/* box  three */
+.cba-container > .section-five > .sbox-five:nth-child(3) {
+    width: 7.5%;
+    height: initial;
+    background-color: transparent;
+    border: 1px solid;
+    border-image: linear-gradient(var(--lco-f), var(--loc-s)) 1;
+    border-top: none;
+    border-right: none;
+}
+
+/* -------------------------------------------------------------------- */
+
+/* section six */
