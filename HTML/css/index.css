@@ -1734,3 +1734,300 @@ a {
 /* --------------------------------------------------------------------------------------- */
 
 /* section seven */
+.cba-container > .section-seven {
+    width: inherit;
+    background-color: transparent;
+    display: flex;
+}
+
+/* box one */
+.cba-container > .section-seven > .sbox-seven:nth-child(1) {
+    width: 7.5%;
+    height: initial;
+    background-color: transparent;
+    border: 1px solid var(--lco-f);
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    position: relative;
+}
+
+/* circle one */
+.cba-container > .section-seven > .sbox-seven:nth-child(1) > span.c-one {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--lco-f);
+    clip-path: circle(50% at 100% 0%);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* ---------------- */
+
+/* box two */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) {
+    width: 85%;
+    height: initial;
+    background-color: transparent;
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+    padding: 3rem 5rem 1.5rem;
+}
+
+/* top content box */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-top-content-box {
+    width: 100%;
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+/* content box one */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-top-content-box > .sbsev-tcb-one {
+    width: 33%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    margin-right: 5.5rem;
+}
+
+/* heading */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-top-content-box > .sbsev-tcb-one > h3 {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+/* paragraph */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-top-content-box > .sbsev-tcb-one > p {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.25rem;
+}
+
+/* content box two */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-top-content-box > .sbsev-tcb-two {
+    width: 22%;
+    display: flex;
+    gap: 0.75rem;
+    flex-direction: column;
+}
+
+/* heading */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-top-content-box > .sbsev-tcb-two > h3 {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* unordered list */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-top-content-box > .sbsev-tcb-two > ul {
+    display: flex;
+    gap: 0.25rem;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+/* list item */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-top-content-box > .sbsev-tcb-two > ul > li > a {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 0.75rem;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+/* hover */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-top-content-box > .sbsev-tcb-two > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+/* content box three */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-top-content-box > .sbsev-tcb-three {
+    width: 22%;
+    display: flex;
+    gap: 0.75rem;
+    flex-direction: column;
+}
+
+/* heading */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-top-content-box > .sbsev-tcb-three > h3 {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* unordered list */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-top-content-box > .sbsev-tcb-three > ul {
+    display: flex;
+    gap: 0.25rem;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+/* list item */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-top-content-box > .sbsev-tcb-three > ul > li > a {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 0.75rem;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+/* hover */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-top-content-box > .sbsev-tcb-three > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+/* content box four */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-top-content-box > .sbsev-tcb-four {
+    width: 23%;
+    display: flex;
+    gap: 0.75rem;
+    flex-direction: column;
+}
+
+/* heading */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-top-content-box > .sbsev-tcb-four > h3 {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* unordered list */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-top-content-box > .sbsev-tcb-four > ul {
+    display: flex;
+    gap: 0.25rem;
+    flex-direction: column;    
+    list-style-type: none;
+}
+
+/* list item */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-top-content-box > .sbsev-tcb-four > ul > li > a {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 0.75rem;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+/* hover */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-top-content-box > .sbsev-tcb-four > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+/* bottom content box */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-bottom-content-box {
+    width: 100%;
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* content box one */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-bottom-content-box > .sbsev-bcb-one {
+    width: 33%;
+}
+
+/* cpyright */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-bottom-content-box > .sbsev-bcb-one > p {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+/* content box two */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-bottom-content-box > .sbsev-bcb-two {
+    width: 33%;
+}
+
+/* unordered list */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-bottom-content-box > .sbsev-bcb-two > ul {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+/* list item */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-bottom-content-box > .sbsev-bcb-two > ul > li > a {
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/* hover */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-bottom-content-box > .sbsev-bcb-two > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+/* content box three */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-bottom-content-box > .sbsev-bcb-three {
+    width: 33%;
+}
+
+/* unordered list */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-bottom-content-box > .sbsev-bcb-three > ul {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+/* list item */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-bottom-content-box > .sbsev-bcb-three > ul > li > a > i.bx {
+    color: var(--lot-s);
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid var(--lot-s);
+    border-radius: 50%;
+}
+
+/* hover */
+.cba-container > .section-seven > .sbox-seven:nth-child(2) > .sbsev-bottom-content-box > .sbsev-bcb-three > ul > li > a > i.bx:hover {
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+/* ---------------- */
+
+/* box three */
+.cba-container > .section-seven > .sbox-seven:nth-child(3) {
+    width: 7.5%;
+    height: initial;
+    background-color: transparent;
+    border: 1px solid var(--loc-s);
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    position: relative;
+}
+
+/* circle two */
+.cba-container > .section-seven > .sbox-seven:nth-child(3) > span.c-two {
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--loc-s);
+    clip-path: circle(50% at 0% 0%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
